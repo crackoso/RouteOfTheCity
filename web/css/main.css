@@ -1,0 +1,240 @@
+
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+/*------------------------------------------------------------
+ * 	Rutisima madre estilo:
+	CSS style por @Urielink publicidadenlinea.com
+	Paleta de color
+	beige: #DAD3C3;
+	café oscuro #615B4E;
+
+------------------------------------------------------------*/
+/* ------------------------------------------------------------
+	Reset 
+ ------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+	padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/*ol, ul {    list-style: none;}*/
+blockquote, q {    quotes: none;}:focus {    outline: 0;}
+ins {    text-decoration: none;}
+del {    text-decoration: line-through;}
+table {    border-collapse: collapse;border-spacing: 0;}
+
+/* -------------------------------------------------
+				Estilos Globales
+----------------------------------------------------*/
+
+body {
+    background: url("../images/rutisima.jpg") no-repeat scroll center top #DAD3C3;
+    color: #615B4E;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 0.8333em; /* 12px */
+    line-height: normal;
+    margin: 0 auto;
+    padding: 100px 0 0;
+    width: 960px;
+    
+}
+
+h1{
+    font-weight: normal;
+    font-style: normal;
+		font-size:2em;			/* 32px */
+		/*line-height:1.5;		 48px */
+	font-family: 'Bree Serif', serif;
+	color: #000;
+	margin:0 0 20px;
+	text-shadow:0 1px 0 #FFFFFF;
+}
+
+h2{	
+    font-weight: normal;
+    font-style: normal;
+        letter-spacing:-0.06em;
+		font-size:1.8em;		/* 22px */
+		/*line-height:1;			 24px */
+		text-transform:uppercase ;
+}
+
+h3{
+    font-weight: normal;
+    font-style: normal;
+		font-size:1.25em;		/* 20px */
+		/*line-height:1.2;		 24px */
+}
+
+h4{
+    font-weight: normal;
+    font-style: normal;
+		font-size:1.125em;		/* 18px */
+		/*line-height:1.333;		/* 24px */
+}
+
+h5, h6{
+    font-weight: normal;
+    font-style: normal;
+		font-size:1em;			/* 16px */
+		/*line-height:1.5;		 24px */
+}
+
+p{ line-height:normal;
+} 
+strong, .textCont span{
+	font-weight:normal !important;
+}
+a{
+	text-decoration:none;
+	font-weight: bold;
+	color: #000;
+}
+a:hover{
+	color: #615B4E;
+	text-decoration: underline;
+}
+small{
+	line-height:normal;
+	font-size:.8333em;
+}
+
+
+/*menu*/
+
+.menunav {
+    float: left;
+    list-style: none outside none;
+    padding: 0;
+    text-align: right;
+}
+
+.menunav li{
+	display:inline-block;
+	width:auto;
+}
+
+
+.menunav li a {
+    font-family: 'Bree Serif',serif;
+    font-size: 1.2em;
+    padding: 0 10px 0 0 ;
+    text-transform: uppercase;
+}
+
+.menunav li a:hover{
+}
+
+.menunav .but{
+}
+	
+	.menuini {
+	    list-style: none outside none;
+	    margin: 80px 0 0;
+	    padding: 0;
+	    text-align: center;
+	}
+	
+	.menuini li{
+		display:inline-block;
+		width:auto;
+	}
+	
+	
+	.backh, .xses{
+		padding: 4px 30px 4px 20px;
+		float: right;
+	}
+	.backh{background: url("../images/ico-home.png") 100% -4px transparent no-repeat;}
+	.xses{background: url("../images/ico-salir.png") 100% -4px transparent no-repeat;}
+	
+	
+.route, .ubic, .rubi{
+	    display: inline-block;
+	    height: auto;
+	    padding: 120px 0 50px;
+	    width: 200px;	
+}
+
+	.route { background: url("../images/ico-ruta.png") no-repeat scroll center center transparent; }
+	.ubic{ background: url("../images/ico-ubica.png") center center transparent no-repeat; }
+	.rubi{ background: url("../images/ico-list.png") center center transparent no-repeat; }
+
+
+/*UX buttons & forms*/
+
+form {
+    background: none repeat scroll 0 0 #B2ABA0;
+    border: 1px solid #4F493C;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    padding: 20px;
+    width: auto;
+    position: relative;
+}
+
+label {
+    color: #FFFFFF;
+    display: block;
+    padding: 5px;
+    text-align: right;
+    text-shadow: 0 1px 0 #000000;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { 
+	cursor: pointer; 
+	-webkit-appearance: button; 
+	*overflow: visible;
+    background:#615B4E;
+    border: 1px solid #4F493C;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 30px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-shadow: -1px 1px 2px #4F493C;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100px;
+    margin:10px 0 0;
+}
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+    text-shadow: -1px 1px 2px #FFF;	
+    background:#4F493C;
+    box-shadow: 0px 2px 4px #000000;
+}
+
+ input[type="text"], input[type="password"]{
+    border: 1px solid #4F493C;
+    margin: 4px 0;
+    padding: 4px;
+ }
+
+ input[type="text"]:hover, input[type="password"]:hover{
+ 	box-shadow: 0px 0px 4px #fff;
+ }
+
+
+/*errores*/
+
+.error_list {
+    bottom: 19px;
+    color: #FF0000;
+    list-style: none outside none;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    width: 190px;
+}
+
+
+
+
+
+

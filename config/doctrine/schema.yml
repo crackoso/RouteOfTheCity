@@ -1,0 +1,48 @@
+Ruta:
+  columns:
+    nombre:      { type: string(255), notnull: true }
+
+Ubicacion:
+  columns:
+    titulo:      { type: string(255), notnull: true}
+    fecha:       { type: string(5000), notnull: true}
+    direccion:   { type: string(5000), notnull: true}
+    descripcion: { type: string(5000), notnull: true}
+    url:         { type: string(1000), notnull: false }
+    audio:       { type: string(1000), notnull: false }
+    idioma:      { type: enum, values: [ "Español", "Inglés" ], notnull: true }
+    latitud:     { type: string(30), notnull: true }
+    longitud:    { type: string(30), notnull: true }
+    archivo1:    { type: string(2000), notnull: false }
+    archivo2:    { type: string(2000), notnull: false }
+    archivo3:    { type: string(2000), notnull: false }
+    archivo4:    { type: string(2000), notnull: false }
+    archivo5:    { type: string(2000), notnull: false }
+    archivo6:    { type: string(2000), notnull: false }
+  relations:
+    RutaUbicaciones: 
+      class: Ruta
+      refClass: RutaUbicaciones
+      local: ruta_id
+      foreign: id
+      foreignAlias: Ruta
+
+RutaUbicaciones:
+  columns:
+    ruta_id:      { type: BIGINT, notnull: true }
+    ubicacion_id: { type: BIGINT, notnull: true }
+    posicion:     { type: int(4), notnull: false }
+  indexes:
+    indiceRutaUbicaciones:
+      fields: [ruta_id, ubicacion_id]
+      type: unique
+    indiceRutaUbicacionesPosicion:
+      fields: [ruta_id, ubicacion_id, posicion]
+      type: unique
+    indiceRutaUbicacionesPosicion:
+      fields: [ubicacion_id, posicion]
+      type: unique
+  relations:
+    Ruta:         { local: ruta_id, foreign: id }
+    Ubicacion:    { local: ubicacion_id, foreign: id, onDelete: Cascade }
+      
